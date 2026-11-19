@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Galeri · Künefeci Ahmet</title>
+<meta name="description" content="Künefeci Ahmet fotoğraf galerisi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="index.html" class="logo">
+      <!-- Logo: img/ahmet.K.png dosyasını koy. Yoksa sadece yazı görünür. -->
+      <img src="img/galeri/ahmet.K.png" alt="Künefeci Ahmet logo" onerror="this.style.display='none'">
+      <span class="logo-yazi">Künefeci <span>Ahmet</span></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menü">☰</button>
+    <nav>
+      <ul id="menuListe">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        <li><a href="menu.html">Menü</a></li>
+        <li><a href="galeri.html" class="aktif">Galeri</a></li>
+        <li><a href="index.html#yorumlar">Yorumlar</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="sayfa-baslik"><div class="container"><small>Fotoğraflar</small><h1>Galeri</h1><p>Künefe, baklava ve dükkanımızdan kareler.</p></div></div>
+
+<section>
+  <div class="container">
+    <div class="filtre" role="group" aria-label="Galeri kategorileri">
+      <button class="aktif" data-kat="hepsi">Hepsi</button>
+      <button data-kat="kunefe">Künefe</button>
+      <button data-kat="baklava">Baklava</button>
+      <button data-kat="mekan">Mekan</button>
+    </div>
+    <div class="galeri-izgara" id="galeriIzgara"></div>
+  </div>
+</section>
+
+<div class="kutu-ac" id="kutuAc" role="dialog" aria-modal="true" aria-label="Fotoğraf">
+  <button class="kapat" id="kutuKapat" aria-label="Kapat">×</button>
+  <button class="onceki" id="kutuOnceki" aria-label="Önceki">‹</button>
+  <button class="sonraki" id="kutuSonraki" aria-label="Sonraki">›</button>
+  <div class="buyuk" id="kutuBuyuk"></div>
+  <p id="kutuYazi"></p>
+</div>
+
+<footer>
+  <div class="container">
+    <p><b>Künefeci Ahmet</b> · Sıcak, taze, bol peynirli</p>
+    <p style="font-size:.8rem;margin-top:6px">© <span id="yil"></span> Tüm hakları saklıdır.</p>
+  </div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/900000000000" aria-label="WhatsApp">💬</a>
+
+<script src="js/ortak.js"></script>
+<script src="js/galeri.js"></script>
+</body>
+</html>

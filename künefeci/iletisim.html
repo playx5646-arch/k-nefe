@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>İletişim · Künefeci Ahmet</title>
+<meta name="description" content="Künefeci Ahmet adres, telefon ve çalışma saatleri.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="index.html" class="logo">
+      <!-- Logo: img/ahmet.K.png dosyasını koy. Yoksa sadece yazı görünür. -->
+      <img src="img/galeri/ahmet.K.png" alt="Künefeci Ahmet logo" onerror="this.style.display='none'">
+      <span class="logo-yazi">Künefeci <span>Ahmet</span></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menü">☰</button>
+    <nav>
+      <ul id="menuListe">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        <li><a href="menu.html">Menü</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="index.html#yorumlar">Yorumlar</a></li>
+        <li><a href="iletisim.html" class="aktif">İletişim</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="sayfa-baslik"><div class="container"><small>Bize Ulaşın</small><h1>İletişim</h1><p>Sipariş, soru ve görüşleriniz için.</p></div></div>
+
+<section class="gri">
+  <div class="container">
+    <div class="iletisim-alan">
+      <div class="iletisim-izgara">
+        <div class="bilgi"><div class="ikon">📍</div><h3>Adres</h3><p>Adresini buraya yaz<br>Şehir / İlçe</p></div>
+        <div class="bilgi"><div class="ikon">📞</div><h3>Telefon</h3><p><a href="tel:+905013324453">0 (000) 000 00 00</a></p></div>
+        <div class="bilgi"><div class="ikon">🕒</div><h3>Çalışma Saatleri</h3><p>Her gün<br>09:00 – 00:00</p></div>
+      </div>
+
+      <form class="iletisim-form rv-sag" id="iletisimForm">
+        <h3>Bize Yazın</h3>
+        <label for="ad">Adın</label>
+        <input type="text" id="ad" maxlength="40" required placeholder="Adın Soyadın">
+        <label for="tel">Telefon (isteğe bağlı)</label>
+        <input type="tel" id="tel" maxlength="20" placeholder="05xx xxx xx xx">
+        <label for="konu">Konu</label>
+        <select id="konu">
+          <option>Sipariş</option>
+          <option>Rezervasyon</option>
+          <option>Soru / Öneri</option>
+        </select>
+        <label for="mesajMetin">Mesajın</label>
+        <textarea id="mesajMetin" maxlength="500" required placeholder="Mesajını yaz"></textarea>
+        <button class="btn btn-sari" type="submit">WhatsApp'ta Gönder</button>
+        <div class="mesaj" id="iletisimMesaj"></div>
+      </form>
+    </div>
+
+    <div class="harita rv-buyu">
+      <!-- Google Haritalar → Paylaş → Haritayı yerleştir kodunu bu <div> içine yapıştır (bu yazıyı sil). -->
+      <div>
+        <p style="font-size:1.1rem;margin-bottom:6px">🗺️ Harita Alanı</p>
+        <p style="color:#ccc;font-size:.9rem">Google Haritalar'dan "Paylaş → Haritayı yerleştir" kodunu buraya yapıştır.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p><b>Künefeci Ahmet</b> · Sıcak, taze, bol peynirli</p>
+    <p style="font-size:.8rem;margin-top:6px">© <span id="yil"></span> Tüm hakları saklıdır.</p>
+  </div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/905013324453" aria-label="WhatsApp">💬</a>
+
+<script src="js/ortak.js"></script>
+<script src="js/iletisim.js"></script>
+</body>
+</html>

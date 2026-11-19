@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Künefeci Ahmet</title>
+<meta name="description" content="Künefeci Ahmet - Taze, sıcak ve bol peynirli künefe, el yapımı baklava.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="index.html" class="logo">
+      <!-- Logo: img/ahmet.K.png dosyasını koy. Yoksa sadece yazı görünür. -->
+      <img src="img/galeri/ahmet.K.png" alt="Künefeci Ahmet logo" onerror="this.style.display='none'">
+      <span class="logo-yazi">Künefeci <span>Ahmet</span></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menü">☰</button>
+    <nav>
+      <ul id="menuListe">
+        <li><a href="index.html" class="aktif">Ana Sayfa</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        <li><a href="menu.html">Menü</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="index.html#yorumlar">Yorumlar</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="ana">
+
+  <video autoplay muted loop playsinline poster="">
+    <source src="video.mp4" type="video/mp4">
+  </video>
+  <div class="hero-content container">
+    <small>Since 19xx · Geleneksel Lezzet</small>
+    <h1>Künefenin <em>Ustası</em><br>Ahmet</h1>
+    <p>Bol peynirli, çıtır tel kadayıflı, sıcak sıcak servis edilen künefe ve el açması baklava.</p>
+    <a href="#menu" class="btn btn-sari">Menüyü Gör</a>
+    <a href="#yorumlar" class="btn btn-cerceve">Yorum Yap</a>
+  </div>
+</div>
+
+<div class="tepsi-seridi" aria-label="Baklava tepsileri">
+  <div class="tepsi-hat" id="tepsiHat"></div>
+</div>
+
+<section id="hakkimizda">
+  <div class="container hakkimizda">
+    <div class="kutu rv-sol">
+      <svg viewBox="0 0 200 200" aria-hidden="true">
+        <circle cx="100" cy="100" r="92" fill="#f5c400"/>
+        <circle cx="100" cy="100" r="78" fill="#0d0d0d"/>
+        <text x="100" y="92" text-anchor="middle" font-family="Playfair Display,serif" font-weight="800" font-size="30" fill="#f5c400">Künefeci</text>
+        <text x="100" y="128" text-anchor="middle" font-family="Playfair Display,serif" font-weight="800" font-size="34" fill="#fff">AHMET</text>
+      </svg>
+    </div>
+    <div class="rv-sag">
+      <div class="baslik" style="text-align:left;margin-bottom:20px">
+        <small>Hakkımızda</small>
+        <h2>Nesillerin Tadı</h2>
+      </div>
+      <p>Künefeci Ahmet, yıllardır aynı özenle, aynı tarifle çalışan bir künefe ustasıdır. Her künefe siparişle, taze peynir ve tel kadayıfla hazırlanır; en son sıcak şerbetle buluşur.</p>
+      <p style="margin-top:12px">Baklava tepsilerimiz her sabah taze açılır. Gelin, sıcak künefenin yanında bir çay için.</p>
+      <div class="sayilar">
+        <div><strong>20+</strong>Yıllık Tecrübe</div>
+        <div><strong>100%</strong>Taze Peynir</div>
+        <div><strong>Her gün</strong>Taze Üretim</div>
+      </div>
+      <a href="hakkimizda.html" class="btn btn-sari" style="margin-top:26px">Hikayemizi Oku</a>
+    </div>
+  </div>
+</section>
+
+<section class="gri" id="menu">
+  <div class="container">
+    <div class="baslik"><small>Lezzetlerimiz</small><h2>Menümüz</h2></div>
+    <div class="menu-izgara">
+      <div class="kart"><h3>Künefe</h3><p>Hatay usulü, bol dil peynirli, sıcak şerbetli klasik künefe.</p><span class="fiyat">₺ 000</span></div>
+      <div class="kart"><h3>Fıstıklı Künefe</h3><p>Üzerine bol Antep fıstığı serpilmiş özel künefe.</p><span class="fiyat">₺ 000</span></div>
+      <div class="kart"><h3>Fıstıklı Baklava</h3><p>El açması ince yufka, bol fıstık, tereyağlı.</p><span class="fiyat">₺ 000</span></div>
+      <div class="kart"><h3>Cevizli Baklava</h3><p>Çıtır çıtır, orta şerbetli ceviz dolgulu baklava.</p><span class="fiyat">₺ 000</span></div>
+    </div>
+
+    <div class="menu-tum">
+      <a href="menu.html" class="btn btn-sari">Tüm Menüyü Gör →</a>
+    </div>
+
+    <p style="text-align:center;margin-top:20px;color:#777;font-size:.85rem">* Fiyatları kendi fiyatlarınla değiştir.</p>
+  </div>
+</section>
+
+<section class="gri" id="galeri-ozet">
+  <div class="container">
+    <div class="baslik"><small>Fotoğraflar</small><h2>Galeri</h2></div>
+    <div class="menu-tum" style="margin-top:0"><p style="margin-bottom:20px">Künefe ve baklava tepsilerimizden kareler.</p><a href="galeri.html" class="btn btn-sari">Galeriyi Gör</a></div>
+  </div>
+</section>
+
+<section class="neden">
+  <div class="container">
+    <div class="baslik"><small>Neden Biz</small><h2>Farkımız</h2></div>
+    <div class="ozellik-izgara">
+      <div class="ozellik"><div class="ikon">🧀</div><h3>Taze Peynir</h3><p>Her gün taze, tuzu ayarlı, uzayan peynir.</p></div>
+      <div class="ozellik"><div class="ikon">🔥</div><h3>Siparişe Özel</h3><p>Künefe önünüzde değil, sıcak sıcak hemen pişer.</p></div>
+      <div class="ozellik"><div class="ikon">🥜</div><h3>Antep Fıstığı</h3><p>Kaliteli, kavrulmuş, bol fıstık.</p></div>
+      <div class="ozellik"><div class="ikon">🚚</div><h3>Paket Servis</h3><p>Baklava ve tatlılar özenle paketlenir.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="yorumlar">
+  <div class="container">
+    <div class="baslik"><small>Müşterilerimiz</small><h2>Yorumlar</h2></div>
+    <div class="yorum-alan">
+      <div class="yorum-liste rv-sol" id="yorumListe"></div>
+
+      <form class="yorum-form rv-sag" id="yorumForm">
+        <h3>Yorumunu Yaz</h3>
+        <label for="isim">Adın</label>
+        <input type="text" id="isim" maxlength="40" required placeholder="Adın Soyadın">
+        <label>Puanın</label>
+        <div class="puan" id="puan">
+          <input type="radio" name="yildiz" id="y5" value="5" checked><label for="y5">★</label>
+          <input type="radio" name="yildiz" id="y4" value="4"><label for="y4">★</label>
+          <input type="radio" name="yildiz" id="y3" value="3"><label for="y3">★</label>
+          <input type="radio" name="yildiz" id="y2" value="2"><label for="y2">★</label>
+          <input type="radio" name="yildiz" id="y1" value="1"><label for="y1">★</label>
+        </div>
+        <label for="metin">Yorumun</label>
+        <textarea id="metin" maxlength="400" required placeholder="Künefe nasıldı?"></textarea>
+        <button class="btn btn-sari" type="submit">Yorumu Gönder</button>
+        <div class="mesaj" id="mesaj"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="gri" id="iletisim">
+  <div class="container">
+    <div class="baslik"><small>Bize Ulaşın</small><h2>İletişim</h2></div>
+    <div class="iletisim-izgara">
+      <div class="bilgi"><div class="ikon">📍</div><h3>Adres</h3><p>Adresini buraya yaz<br>Şehir / İlçe</p></div>
+      <div class="bilgi"><div class="ikon">📞</div><h3>Telefon</h3><p><a href="tel:+900000000000">0 (000) 000 00 00</a></p></div>
+      <div class="bilgi"><div class="ikon">🕒</div><h3>Çalışma Saatleri</h3><p>Her gün<br>09:00 – 00:00</p></div>
+    </div>
+    <div class="menu-tum">
+      <a href="iletisim.html" class="btn btn-sari">Bize Yazın / Harita</a>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <p><b>Künefeci Ahmet</b> · Sıcak, taze, bol peynirli</p>
+    <p style="font-size:.8rem;margin-top:6px">© <span id="yil"></span> Tüm hakları saklıdır.</p>
+  </div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/900000000000" aria-label="WhatsApp">💬</a>
+
+<script src="js/ortak.js"></script>
+<script src="js/anasayfa.js"></script>
+</body>
+</html>

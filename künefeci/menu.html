@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menü · Künefeci Ahmet</title>
+<meta name="description" content="Künefeci Ahmet menüsü: künefe, baklava, şöbiyet ve içecekler.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="index.html" class="logo">
+      <!-- Logo: img/ahmet.K.png dosyasını koy. Yoksa sadece yazı görünür. -->
+      <img src="img/galeri/ahmet.K.png" alt="Künefeci Ahmet logo" onerror="this.style.display='none'">
+      <span class="logo-yazi">Künefeci <span>Ahmet</span></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menü">☰</button>
+    <nav>
+      <ul id="menuListe">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        <li><a href="menu.html" class="aktif">Menü</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="index.html#yorumlar">Yorumlar</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="sayfa-baslik"><div class="container"><small>Lezzetlerimiz</small><h1>Menümüz</h1><p>Künefe, baklava ve içecekler.</p></div></div>
+
+<section class="gri">
+  <div class="container">
+    <div class="filtre" role="group" aria-label="Menü kategorileri">
+      <button class="aktif" data-kat="hepsi">Hepsi</button>
+      <button data-kat="kunefe">Künefe</button>
+      <button data-kat="baklava">Baklava</button>
+      <button data-kat="icecek">İçecekler</button>
+    </div>
+    <div class="menu-izgara">
+      <div class="kart" data-kat="kunefe"><h3>Peynirli Künefe</h3><p>Hatay usulü, bol dil peynirli, sıcak şerbetli klasik künefe.</p><div class="alt"><span class="fiyat">₺ 000</span><small>Künefe</small></div></div>
+      <div class="kart" data-kat="kunefe"><h3>Kymaklı Künefe</h3><p>Üzerine bol Antep fıstığı serpilmiş özel künefe.</p><div class="alt"><span class="fiyat">₺ 000</span><small>Künefe</small></div></div>
+      <div class="kart" data-kat="kunefe"><h3>Dondurmalı Künefe</h3><p>Sıcak künefenin yanında bir top kaymaklı dondurma.</p><div class="alt"><span class="fiyat">₺ 000</span><small>Künefe</small></div></div>
+      <div class="kart" data-kat="baklava"><h3>Bohça Künefe</h3><p>El açması ince yufka, bol fıstık, tereyağlı.</p><div class="alt"><span class="fiyat">₺ 000</span><small>Baklava</small></div></div>
+      <div class="kart" data-kat="baklava"><h3>Ergani Künefe</h3><p>Çıtır çıtır, orta şerbetli ceviz dolgulu baklava.</p><div class="alt"><span class="fiyat">₺ 000</span><small>Baklava</small></div></div>
+      <div class="kart" data-kat="baklava"><h3>Özel Künefe</h3><p>Kaymaklı veya fıstıklı, ince yufkalı şöbiyet.</p><div class="alt"><span class="fiyat">₺ 000</span><small>Baklava</small></div></div>
+      <div class="kart" data-kat="baklava"><h3>3'ü Bir Arada Künefe</h3><p>Bol fıstıklı, rulo şeklinde dolama.</p><div class="alt"><span class="fiyat">₺ 000</span><small>Baklava</small></div></div>
+      <div class="kart" data-kat="baklava"><h3>Sultanzade Künefe </h3><p>Az şerbetli, kuru ve çıtır baklava.</p><div class="alt"><span class="fiyat">₺ 000</span><small>Baklava</small></div></div>
+      <div class="kart" data-kat="baklava"><h3>Dondurmalı Künefe </h3><p>Midye şeklinde, fıstık dolgulu baklava.</p><div class="alt"><span class="fiyat">₺ 000</span><small>Baklava</small></div></div>
+      <div class="kart" data-kat="baklava"><h3>Havuç Dilimi</h3><p>Fıstıklı, havuç dilimi biçiminde baklava.</p><div class="alt"><span class="fiyat">₺ 000</span><small>Baklava</small></div></div>
+      <div class="kart" data-kat="baklava"><h3>Fıstık Sarma</h3><p>Tamamen fıstık dolgulu sarma.</p><div class="alt"><span class="fiyat">₺ 000</span><small>Baklava</small></div></div>
+      <div class="kart" data-kat="icecek"><h3>Çay</h3><p>İnce belli bardakta demli çay.</p><div class="alt"><span class="fiyat">₺ 000</span><small>İçecek</small></div></div>
+      <div class="kart" data-kat="icecek"><h3>Türk Kahvesi</h3><p>Közde, orta şekerli.</p><div class="alt"><span class="fiyat">₺ 000</span><small>İçecek</small></div></div>
+      <div class="kart" data-kat="icecek"><h3>Ayran</h3><p>Soğuk, köpüklü ayran.</p><div class="alt"><span class="fiyat">₺ 000</span><small>İçecek</small></div></div>
+    </div>
+    <p class="menu-not">* Fiyatları kendi fiyatlarınla değiştir (menu.html içindeki ₺ 000).</p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p><b>Künefeci Ahmet</b> · Sıcak, taze, bol peynirli</p>
+    <p style="font-size:.8rem;margin-top:6px">© <span id="yil"></span> Tüm hakları saklıdır.</p>
+  </div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/900000000000" aria-label="WhatsApp">💬</a>
+
+<script src="js/ortak.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>
